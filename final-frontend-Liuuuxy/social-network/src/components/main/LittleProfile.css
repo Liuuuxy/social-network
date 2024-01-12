@@ -1,0 +1,49 @@
+.little-profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.profile-image {
+  transition: transform 0.3s;
+  height: 100px;
+  width: 100px;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: #333; /* Darker color for more contrast */
+  margin-bottom: 5px;
+}
+
+.profile-status {
+  font-size: 0.9em;
+  color: grey;
+  font-style: italic; /* Making the status italicized for a subtle difference */
+}
+
+@media (max-width: 575.98px) {
+  .profile-name {
+    font-size: 0.9em;
+  }
+
+  .profile-status {
+    font-size: 0.8em;
+  }
+}

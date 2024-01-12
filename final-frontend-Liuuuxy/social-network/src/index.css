@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: "100vh";
+  background: "linear-gradient(135deg, #f3ec78, #af4261)";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+/* UserProfilePhoto */
+
+.user-photo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.pp-profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  object-fit: cover !important;
+}
+
+.edit-icon {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.edit-icon button {
+  width: 7vh;
+  height: 7vh;
+  background-color: rgb(235, 200, 154);
+  border: 0px transparent;
+  border-radius: 50%;
+  padding: auto;
+  max-width: 60px;
+  max-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-icon {
+  width: 6vh;
+  height: auto;
+  max-height: 50px;
+  color: #836096;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+  border-radius: 50%;
+}
+
+.pencil-icon {
+  width: 5vh;
+  height: auto;
+  color: white;
+  margin: 0;
+  max-width: 30px;
+  min-width: 10px;
+}
+
+.c-icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* DisplayInfo */
+
+.saveBtn {
+  background-color: #af4261 !important;
+  border-color: #af4261 !important;
+}
+
+.button-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-group > button {
+  width: 100px;
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-group {
+    flex-direction: row;
+  }
+
+  .button-group > button {
+    width: 150px;
+  }
+}
+
+/* Profile */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+}
+
+.profile-card {
+  max-width: 30rem;
+  width: 90%;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card .card-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profile-card .form-label {
+  font-weight: bold;
+}
+
+/* NavBar */
+.house-icon {
+  color: white;
+}
